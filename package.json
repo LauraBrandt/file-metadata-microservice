@@ -1,0 +1,25 @@
+{
+  "name": "file-metadata",
+  "version": "1.0.0",
+  "description": "accepts a file and returns the file size in bytes",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Laura Brandt",
+  "license": "MIT",
+  "engines": {
+    "node": "4.5.0"
+  },
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+    "repository": {
+    "type": "git",
+    "url": "https://github.com/LauraBrandt/file-metadata-microservice.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LauraBrandt/file-metadata-microservice/issues"
+  },
+  "private": true
+}
