@@ -17,5 +17,6 @@ Usage
 2. Upload a file.
 3. Click Submit.
 
-Example output:
+**Example output:**
+
 `{"size":153962}`
