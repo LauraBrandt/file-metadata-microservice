@@ -1,15 +1,14 @@
 'use strict';
 
+// Set up app
 var express = require('express');
-
 var app = express();
+app.use('/public', express.static(process.cwd() + '/public'));
 
-app.use(express.static(__dirname + '/public'));
+// Use the routes
+app.use(require( './routes'));
 
-app.get("/", function(req, res) {
-        res.sendFile(process.cwd() + "/views/index.html");
-    });
-
+// Listen
 var port = process.env.PORT || 8080;
 app.listen(port, function () {
   console.log('App listening on port', port);

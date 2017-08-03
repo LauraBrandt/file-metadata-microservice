@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="/public/style.css">
 </head>
 <body>
     <div class="container">
@@ -15,8 +15,8 @@
 			<a href="https://www.freecodecamp.org/challenges/file-metadata-microservice">API Project</a></small></h1>
 		<h3>Get the size of your file</h3>
 		<p>Select a file to view its filesize.</p>
-		<form name="getFile" action="/get-file-size" method='post'>
-		    <input type="file" name="fileInput" required>
+		<form name="getFile" action="/get-file-size" method="post" enctype="multipart/form-data">
+		    <input type="file" name="file" required>
 		    <input type="submit" class="submit" value="Submit">
 		</form>
 		<blockquote>
